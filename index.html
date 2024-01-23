@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Music player</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="http://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://yastatic.net/jquery-ui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/player_scripts.js"></script>
+	<script type="text/javascript" src="js/id3-minimized.js"></script>
+</head>
+<body>
+	<div id="container">
+		<a href="https://music.yandex.ru/" target="_blank" id="cover-link">
+			<img id="cover" src="images/album.png" alt="Этот альбом на яндекс.музыке">
+		</a>
+		<div id="song-descrip">
+			<span id="title"></span><br>
+			<a href="about:blank" target="_blank" id="artist-link">
+				<span id="artist"></span><br>
+			</a>
+			<span id="name"></span>
+		</div>
+		<div id="pause-button"></div>
+		<div id="resume-button"></div>
+		<div id="wait-button"></div>
+		<canvas id="visualizer"></canvas>
+		<div id="manualing">
+			<span id="timer"></span>
+			<div id="songJump">
+				<span id="progress">&nbsp;</span>
+			</div>
+			<div id="equalizer-btns">
+				<button id="Pop">Pop</button>
+				<button id="Rock">Rock</button>
+				<button id="Jazz">Jazz</button>
+				<button id="Classic">Classic</button>
+				<button id="Normal">Normal</button>
+			</div>
+			<span id="about">i</span>
+		</div>
+		<div id="drag-me">
+			<span>drag me!</span>
+		</div>
+		<div id="loading"></div>
+		<div id="move-here">
+			<span>Перетащите музыкальный файл сюда</span><span>или</span><span>кликните для выбора файла</span>
+		</div>
+		<input type="file" id="file" accept="audio/*">
+		<div id="about-box">Музыкальный MP3 плеер, демонстрирующий возможности WebAudio в HTML5<br><br><br><hr>Щедрин Иван<br>2015</div>
+	</div>
+</body>
+</html>
