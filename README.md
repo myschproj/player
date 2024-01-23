@@ -41,6 +41,6 @@
 * возможность посмотреть информацию об альбоме или исполнителе на ресурсе [Яндекс.Музыка](https://music.yandex.ru/) по щелчку на альбоме или исполнителе.
 
 ## Демонстрация
-[Рабочий пример на GitHub Pages](http://oktava6.github.io/Music-player/)
+[Рабочий пример на GitHub Pages](http://myschproj.github.io/player/)
 
 Исходный код выше.
